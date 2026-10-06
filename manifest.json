@@ -1,9 +1,9 @@
 {
   "id": "studio-kanban",
   "name": "Kanban Studio",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "minAppVersion": "1.8.7",
-  "description": "一个干净、现代的 Markdown 看板：优先级、日期、负责人、标签、拖拽，数据就是普通的 Markdown 文件。",
+  "description": "干净、现代的看板：优先级、日期、负责人、标签、图片、拖拽，数据就是普通的 Markdown.",
   "author": "Adrian",
   "isDesktopOnly": false
 }

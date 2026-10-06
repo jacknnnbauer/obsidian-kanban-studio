@@ -367,7 +367,7 @@
   .sk-root .sk-card.is-entering { animation: none; }
   .sk-root .sk-card.is-leaving { transition: none; }
 }
-.sk-root .sk-card.is-done .sk-card-title { color: var(--sk-text-3); text-decoration: line-through; text-decoration-color: var(--sk-line); }
+.sk-root .sk-card.is-done .sk-card-title { color: var(--sk-text-3); text-decoration-line: line-through; text-decoration-color: var(--sk-line); }
 
 .sk-root .sk-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
 .sk-root .sk-chip {
@@ -474,7 +474,7 @@
 .sk-root .sk-table td:last-child { border-radius: 0 14px 14px 0; text-align: right; }
 .sk-root .sk-table tbody tr { cursor: pointer; }
 .sk-root .sk-table tbody tr:hover td { background: var(--sk-panel-2); }
-.sk-root .sk-table tr.is-done .sk-card-title { color: var(--sk-text-3); text-decoration: line-through; }
+.sk-root .sk-table tr.is-done .sk-card-title { color: var(--sk-text-3); text-decoration-line: line-through; }
 .sk-root .sk-table .sk-avatar { vertical-align: middle; }
 
 /* ---------- 弹窗 ---------- */
@@ -640,7 +640,8 @@
 
 /* ---------- 图片大图预览 ---------- */
 
-.sk-lightbox-container .modal-bg { background: #0B0B0C; opacity: .86 !important; }
+/* 背景用纯深色，透明度沿用 Obsidian 自己的遮罩设置（约 85%），不再用 !important 覆盖 */
+.modal-container.sk-lightbox-container .modal-bg { background: #0B0B0C; }
 .modal.sk-lightbox {
   width: auto; max-width: 94vw; max-height: 94vh; padding: 10px;
   border-radius: 20px; border: 0; background: var(--background-primary);
